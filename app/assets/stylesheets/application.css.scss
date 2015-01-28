@@ -24,23 +24,9 @@ $indigo: #4B0082;
 
 body {
  	font-family: 'Lato', sans-serif;
- 	#background: #EDEFF0;
-  #background: #C0C0C0;
-  background: #82CAFA;
+ 	background: #EDEFF0;
  }
-h1 {
-        font-weight: 700;
-        color: $yellow;
-        font-size: 1rem;
-        margin-top: 0;
-      }
-h2 {
-      text-transform: uppercase;
-      font-weight: 700;
-      color: $indigo;
-      letter-spacing: 1px;
-      font-size: 1.2rem;
-}
+
 .wrapper {
 	width: 60%;
 	max-width: 1140px;
@@ -59,24 +45,25 @@ h2 {
 .main_header {
 	width: 100%;
 	margin: 0 auto;
-	background: #38ACEC;
+	background: white;
 	#logo {
 		float: left;
-    p {
-		  text-transform: uppercase;
-      font-weight: 700;
-      color: green;
-      letter-spacing: -1px;
-      font-size: 1.2rem;
-    }
+		a {
+			text-transform: uppercase;
+			font-weight: 700;
+			letter-spacing: -1px;
+			font-size: 1.2rem;
+			text-decoration: none;
+			color:#397CAC;
+		}
 	}
 	#buttons {
 		float: right;
 		a {
 			line-height: 60px;
 			background: #397CAC;
-      padding: .5em 1em;
-			border-radius: 0.5em;
+			padding: .5em 1em;
+			border-radius: 0.2em;
 			color: white;
 			text-decoration: none;
 			font-weight: 100;
@@ -85,17 +72,17 @@ h2 {
 }
 
 #posts {
-	background: #38ACEC;
-  padding: 2em 10%;
-	border-radius: .75em;
+	background: white;
+	padding: 2em 5%;
+	border-radius: .5em;
 	.post {
 		margin: 1em 0;
 		padding: 1em 0;
-		border-bottom: 2px solid #D1d1d1;
+		border-bottom: 1px solid #D1d1d1;
 		.title {
 			margin: 0;
 			a {
-				color: #0C090A;
+				color: #397CAC;
 				text-decoration: none;
 				font-weight: 100;
 				font-size: 1.25rem;
@@ -104,19 +91,85 @@ h2 {
 		.date {
 			margin-top: .25rem;
 			font-size: 0.9rem;
-			color: white;
+			color: #B2BAC2;
 		}
 	}
 }
 
+.button {
+	color: #397CAC;
+	border: 1px solid #397CAC;
+	padding: .5em 1em;
+	border-radius: 0.2em;
+	text-decoration: none;
+	margin-right: 2%;
+}
+
 #post_content {
-  background:  #38ACEC;
-  padding: 2em, 5%;
-  border-radius: .5em;
-     p {
-		    font-weight: 100;
-        color: white;
-        font-size: 1rem;
-        line-height: 1.5;
-    }
+	background: white;
+	padding: 2em 5%;
+	border-radius: .5em;
+	h1 {
+		font-weight: 100;
+		font-size: 2em;
+		color: #397CAC;
+		margin-top: 0;
+	}
+	p {
+		color: #B2BAC2;
+		font-size: 0.9rem;
+		font-weight: 100;
+		line-height: 1.5;
+	}
+	#comments {
+		.comment {
+			border-bottom: 1px solid #d1d1d1;
+			padding-bottom: 1em;
+			margin-bottom: 1em;
+			.content {
+				width: 75%;
+				float: left;
+			}
+			.buttons {
+				width: 25%;
+				float: left;
+				font-size: .8em;
+				text-align: right;
+				padding-top: 1.5em;
+				a {
+					color: #397CAC;
+					border: 1px solid #397CAC;
+					padding: .5em 1em;
+					border-radius: 0.2em;
+					text-decoration: none;
+					margin-right: 2%;
+				}
+			}
+			.comment_content {
+				margin: 0;
+				padding: 0;
+			}
+			.comment_author {
+				color: #397CAC;
+				margin-top: .5rem;
+				font-size: 0.6em;
+				font-weight: 700;
+			}
+		}
+		input[type="submit"] {
+			background: #397CAC;
+			border: none;
+			color: white;
+			font-weight: 100;
+			padding: .5em 1em;
+			border-radius: .2em;
+		}
+		textarea {
+			width: 100%;
+			min-height: 200px;
+			border: 1px solid #d1d1d1;
+			border-radius: .2em;
+			margin: 1em 0;
+		}
+	}
 }
