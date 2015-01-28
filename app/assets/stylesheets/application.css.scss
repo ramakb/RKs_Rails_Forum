@@ -13,13 +13,34 @@
  *= require_tree .
  *= require_self
  */
+$dark_gray: #2B2E2E;
+$light_gray: #C0C1C1;
+$green: #33CD99;
+$yellow: #FFFF00;
+$orange: #FFA500;
+$red: #FF0000;
+$dark_pink: #F52887;
+$indigo: #4B0082;
+
 body {
  	font-family: 'Lato', sans-serif;
  	#background: #EDEFF0;
   #background: #C0C0C0;
   background: #82CAFA;
  }
-
+h1 {
+        font-weight: 700;
+        color: $yellow;
+        font-size: 1rem;
+        margin-top: 0;
+      }
+h2 {
+      text-transform: uppercase;
+      font-weight: 700;
+      color: $indigo;
+      letter-spacing: 1px;
+      font-size: 1.2rem;
+}
 .wrapper {
 	width: 60%;
 	max-width: 1140px;
@@ -38,7 +59,7 @@ body {
 .main_header {
 	width: 100%;
 	margin: 0 auto;
-	background: white;
+	background: #38ACEC;
 	#logo {
 		float: left;
     p {
@@ -64,7 +85,7 @@ body {
 }
 
 #posts {
-	background: white;
+	background: #38ACEC;
   padding: 2em 10%;
 	border-radius: .75em;
 	.post {
@@ -74,7 +95,7 @@ body {
 		.title {
 			margin: 0;
 			a {
-				color: #397CAC;
+				color: #0C090A;
 				text-decoration: none;
 				font-weight: 100;
 				font-size: 1.25rem;
@@ -83,7 +104,19 @@ body {
 		.date {
 			margin-top: .25rem;
 			font-size: 0.9rem;
-			color: #B2BAC2;
+			color: white;
 		}
 	}
+}
+
+#post_content {
+  background:  #38ACEC;
+  padding: 2em, 5%;
+  border-radius: .5em;
+     p {
+		    font-weight: 100;
+        color: white;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
 }
