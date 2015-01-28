@@ -1,6 +1,6 @@
 #post_content
 	%h1= @post.title
-	%p= @post.content
+	%p= simple_format(@post.content)
 
 	#comments
 		%h2
@@ -16,4 +16,4 @@
 	%br/
 
 	= link_to "Edit", edit_post_path(@post), class: "button"
-	= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you want to do this?" }, class: "button"
+	= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you want to do this?" }, class: "button" 
